@@ -1,0 +1,442 @@
+/* =========================
+   DASHBOARD PAGE
+========================= */
+
+.dashboard-page {
+  min-height: 100vh;
+
+  background: #051937;
+
+  color: white;
+}
+
+
+/* =========================
+   MAIN AREA
+========================= */
+
+.dashboard-main {
+  margin-left: 256px;
+
+  min-height: 100vh;
+}
+
+
+/* =========================
+   CONTENT
+========================= */
+
+.dashboard-content {
+  padding: 32px;
+}
+
+
+/* =========================
+   WELCOME
+========================= */
+
+.dashboard-welcome {
+  margin-bottom: 32px;
+}
+
+.dashboard-title {
+  margin: 0;
+
+  font-size: 30px;
+
+  font-weight: 800;
+
+  line-height: 1.3;
+}
+
+.dashboard-title span {
+  color: #a8eb12;
+}
+
+.dashboard-subtitle {
+  margin: 8px 0 0;
+
+  color: #94a3b8;
+
+  font-size: 14px;
+}
+
+
+/* =========================
+   STATS GRID
+========================= */
+
+.dashboard-stats {
+  display: grid;
+
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+
+  gap: 24px;
+}
+
+
+/* =========================
+   STAT CARD
+========================= */
+
+.dashboard-card {
+  padding: 24px;
+
+  border: 1px solid #1e293b;
+
+  border-radius: 16px;
+
+  background: #061f43;
+
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.dashboard-card:hover {
+  transform: translateY(-4px);
+
+  border-color: rgba(168, 235, 18, 0.3);
+
+  box-shadow:
+    0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+
+/* =========================
+   CARD TOP
+========================= */
+
+.dashboard-card-top {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+}
+
+
+/* =========================
+   CARD LABEL
+========================= */
+
+.dashboard-card-label {
+  margin: 0;
+
+  color: #94a3b8;
+
+  font-size: 14px;
+}
+
+
+/* =========================
+   CARD NUMBER
+========================= */
+
+.dashboard-card-number {
+  margin: 8px 0 0;
+
+  color: white;
+
+  font-size: 36px;
+
+  font-weight: 800;
+
+  line-height: 1;
+}
+
+
+/* =========================
+   ROLE
+========================= */
+
+.dashboard-role {
+  margin: 8px 0 0;
+
+  color: #a8eb12;
+
+  font-size: 24px;
+
+  font-weight: 800;
+
+  text-transform: capitalize;
+}
+
+
+/* =========================
+   CARD ICON
+========================= */
+
+.dashboard-card-icon {
+  width: 56px;
+  height: 56px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  border-radius: 12px;
+
+  background: rgba(168, 235, 18, 0.1);
+
+  color: #a8eb12;
+
+  font-size: 23px;
+}
+
+
+/* =========================
+   CARD LINK
+========================= */
+
+.dashboard-card-link {
+  margin-top: 24px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  color: #94a3b8;
+
+  font-size: 14px;
+
+  text-decoration: none;
+
+  transition:
+    color 0.2s ease,
+    gap 0.2s ease;
+}
+
+.dashboard-card-link:hover {
+  color: #a8eb12;
+
+  gap: 11px;
+}
+
+
+/* =========================
+   CARD DESCRIPTION
+========================= */
+
+.dashboard-card-description {
+  margin: 24px 0 0;
+
+  color: #64748b;
+
+  font-size: 14px;
+}
+
+
+/* =========================
+   QUICK ACTIONS
+========================= */
+
+.dashboard-actions {
+  margin-top: 32px;
+}
+
+
+/* =========================
+   SECTION TITLE
+========================= */
+
+.dashboard-section-title {
+  margin: 0 0 20px;
+
+  color: white;
+
+  font-size: 20px;
+
+  font-weight: 700;
+}
+
+
+/* =========================
+   ACTION GRID
+========================= */
+
+.dashboard-action-grid {
+  display: grid;
+
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  gap: 20px;
+}
+
+
+/* =========================
+   ACTION CARD
+========================= */
+
+.dashboard-action-card {
+  display: block;
+
+  padding: 24px;
+
+  border: 1px solid #1e293b;
+
+  border-radius: 16px;
+
+  background: #061f43;
+
+  color: white;
+
+  text-decoration: none;
+
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.dashboard-action-card:hover {
+  transform: translateY(-3px);
+
+  border-color: rgba(168, 235, 18, 0.4);
+
+  box-shadow:
+    0 15px 35px rgba(0, 0, 0, 0.18);
+}
+
+
+/* =========================
+   ACTION ICON
+========================= */
+
+.dashboard-action-icon {
+  margin-bottom: 16px;
+
+  color: #a8eb12;
+
+  font-size: 24px;
+}
+
+
+/* =========================
+   ACTION TITLE
+========================= */
+
+.dashboard-action-card h3 {
+  margin: 0;
+
+  color: white;
+
+  font-size: 16px;
+
+  font-weight: 700;
+}
+
+
+/* =========================
+   ACTION DESCRIPTION
+========================= */
+
+.dashboard-action-card p {
+  margin: 8px 0 0;
+
+  color: #94a3b8;
+
+  font-size: 14px;
+
+  line-height: 1.6;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 1100px) {
+
+  .dashboard-main {
+    margin-left: 220px;
+  }
+
+  .dashboard-content {
+    padding: 28px;
+  }
+
+  .dashboard-stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+  .dashboard-main {
+    margin-left: 0;
+  }
+
+  .dashboard-content {
+    padding: 24px 18px;
+  }
+
+  .dashboard-title {
+    font-size: 25px;
+  }
+
+  .dashboard-subtitle {
+    font-size: 13px;
+  }
+
+  .dashboard-stats {
+    grid-template-columns: 1fr;
+
+    gap: 16px;
+  }
+
+  .dashboard-action-grid {
+    grid-template-columns: 1fr;
+
+    gap: 16px;
+  }
+
+}
+
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 480px) {
+
+  .dashboard-content {
+    padding: 20px 14px;
+  }
+
+  .dashboard-title {
+    font-size: 22px;
+  }
+
+  .dashboard-card {
+    padding: 20px;
+  }
+
+  .dashboard-card-number {
+    font-size: 32px;
+  }
+
+  .dashboard-card-icon {
+    width: 50px;
+    height: 50px;
+
+    font-size: 20px;
+  }
+
+  .dashboard-action-card {
+    padding: 20px;
+  }
+
+}

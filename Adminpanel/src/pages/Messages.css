@@ -1,0 +1,629 @@
+/* =================================
+   MAIN PAGE
+================================= */
+
+.messages-page {
+  min-height: 100vh;
+  background: #051937;
+  color: #ffffff;
+}
+
+
+/* =================================
+   MAIN AREA
+================================= */
+
+.messages-main {
+  min-height: 100vh;
+  margin-left: 256px;
+}
+
+
+/* =================================
+   CONTENT
+================================= */
+
+.messages-content {
+  width: 100%;
+  max-width: 1400px;
+
+  margin: 0 auto;
+
+  padding: 32px;
+}
+
+
+/* =================================
+   HEADER
+================================= */
+
+.messages-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 24px;
+
+  margin-bottom: 32px;
+}
+
+.messages-heading {
+  min-width: 0;
+}
+
+.messages-title {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.messages-subtitle {
+  margin: 8px 0 0;
+
+  color: #94a3b8;
+
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+
+/* =================================
+   REFRESH BUTTON
+================================= */
+
+.messages-refresh-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 8px;
+
+  padding: 12px 20px;
+
+  border: 1px solid #334155;
+  border-radius: 12px;
+
+  background: #061f43;
+
+  color: #e2e8f0;
+
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    border-color 0.25s ease,
+    color 0.25s ease,
+    background 0.25s ease,
+    transform 0.2s ease;
+}
+
+.messages-refresh-button:hover:not(:disabled) {
+  border-color: #a8eb12;
+  color: #a8eb12;
+  background: #0a2852;
+}
+
+.messages-refresh-button:active:not(:disabled) {
+  transform: scale(0.97);
+}
+
+.messages-refresh-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.messages-refresh-icon {
+  font-size: 14px;
+}
+
+.spinning {
+  animation: messages-spin 1s linear infinite;
+}
+
+
+/* =================================
+   ERROR
+================================= */
+
+.messages-error {
+  margin-bottom: 24px;
+
+  padding: 16px 20px;
+
+  border: 1px solid rgba(239, 68, 68, 0.25);
+  border-radius: 12px;
+
+  background: rgba(239, 68, 68, 0.08);
+}
+
+.messages-error-title {
+  margin: 0;
+
+  color: #f87171;
+
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.messages-error-text {
+  margin: 5px 0 0;
+
+  color: #fca5a5;
+
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+
+/* =================================
+   STATE CARD
+================================= */
+
+.messages-state-card {
+  min-height: 300px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding: 32px;
+
+  border: 1px solid #1e293b;
+  border-radius: 16px;
+
+  background: #061f43;
+
+  text-align: center;
+}
+
+.messages-state-card > p {
+  margin: 16px 0 0;
+
+  color: #94a3b8;
+
+  font-size: 14px;
+}
+
+
+/* =================================
+   LOADING SPINNER
+================================= */
+
+.messages-spinner {
+  width: 42px;
+  height: 42px;
+
+  border: 4px solid #334155;
+  border-top-color: #a8eb12;
+
+  border-radius: 50%;
+
+  animation: messages-spin 1s linear infinite;
+}
+
+
+/* =================================
+   EMPTY STATE
+================================= */
+
+.messages-empty {
+  min-height: 350px;
+}
+
+.messages-empty-icon-wrapper {
+  width: 64px;
+  height: 64px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 16px;
+
+  background: rgba(168, 235, 18, 0.1);
+}
+
+.messages-empty-icon {
+  color: #a8eb12;
+
+  font-size: 25px;
+}
+
+.messages-empty h2 {
+  margin: 20px 0 0;
+
+  color: #ffffff;
+
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.messages-empty p {
+  max-width: 420px;
+
+  margin: 8px 0 0;
+
+  color: #64748b;
+
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+
+/* =================================
+   MESSAGES LIST
+================================= */
+
+.messages-list {
+  display: flex;
+  flex-direction: column;
+
+  gap: 20px;
+}
+
+
+/* =================================
+   MESSAGE COUNT
+================================= */
+
+.messages-count {
+  display: flex;
+  align-items: center;
+
+  gap: 8px;
+
+  margin-bottom: 2px;
+
+  color: #94a3b8;
+
+  font-size: 14px;
+}
+
+.messages-count-icon {
+  color: #a8eb12;
+}
+
+.messages-count-number {
+  color: #ffffff;
+
+  font-weight: 700;
+}
+
+
+/* =================================
+   MESSAGE CARD
+================================= */
+
+.message-card {
+  width: 100%;
+
+  padding: 20px;
+
+  border: 1px solid #1e293b;
+  border-radius: 16px;
+
+  background: #061f43;
+
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+
+  transition:
+    border-color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.message-card:hover {
+  border-color: #334155;
+
+  transform: translateY(-2px);
+}
+
+
+/* =================================
+   CARD CONTENT
+================================= */
+
+.message-card-content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  gap: 20px;
+}
+
+.message-content {
+  min-width: 0;
+  flex: 1;
+}
+
+
+/* =================================
+   USER
+================================= */
+
+.message-user {
+  display: flex;
+  align-items: center;
+
+  gap: 16px;
+}
+
+.message-avatar {
+  width: 48px;
+  height: 48px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: rgba(168, 235, 18, 0.1);
+
+  color: #a8eb12;
+
+  font-size: 16px;
+}
+
+.message-user-info {
+  min-width: 0;
+}
+
+.message-user-info h2 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 16px;
+  font-weight: 700;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.message-user-info p {
+  margin: 4px 0 0;
+
+  color: #64748b;
+
+  font-size: 14px;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+/* =================================
+   MESSAGE TEXT
+================================= */
+
+.message-text-box {
+  margin-top: 20px;
+
+  padding: 16px;
+
+  border: 1px solid #1e293b;
+  border-radius: 12px;
+
+  background: #051937;
+}
+
+.message-text-box p {
+  margin: 0;
+
+  color: #cbd5e1;
+
+  font-size: 14px;
+  line-height: 1.75;
+
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+
+/* =================================
+   DATE
+================================= */
+
+.message-date {
+  display: flex;
+  align-items: center;
+
+  gap: 8px;
+
+  margin: 14px 0 0;
+
+  color: #64748b;
+
+  font-size: 12px;
+}
+
+.message-date svg {
+  flex-shrink: 0;
+}
+
+
+/* =================================
+   ACTIONS
+================================= */
+
+.message-actions {
+  flex-shrink: 0;
+}
+
+
+/* =================================
+   DELETE BUTTON
+================================= */
+
+.message-delete-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 8px;
+
+  padding: 12px 16px;
+
+  border: 1px solid rgba(239, 68, 68, 0.2);
+  border-radius: 12px;
+
+  background: rgba(239, 68, 68, 0.1);
+
+  color: #f87171;
+
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    background 0.25s ease,
+    border-color 0.25s ease,
+    color 0.25s ease;
+}
+
+.message-delete-button:hover {
+  border-color: rgba(239, 68, 68, 0.4);
+
+  background: rgba(239, 68, 68, 0.2);
+
+  color: #ef4444;
+}
+
+
+/* =================================
+   ANIMATION
+================================= */
+
+@keyframes messages-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* =================================
+   LARGE TABLET
+================================= */
+
+@media (max-width: 1100px) {
+  .messages-content {
+    padding: 26px;
+  }
+}
+
+
+/* =================================
+   TABLET
+================================= */
+
+@media (max-width: 768px) {
+  .messages-main {
+    margin-left: 0;
+  }
+
+  .messages-content {
+    padding: 22px;
+  }
+
+  .messages-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .messages-refresh-button {
+    width: 100%;
+  }
+
+  .message-card-content {
+    flex-direction: column;
+  }
+
+  .message-actions {
+    width: 100%;
+  }
+
+  .message-delete-button {
+    width: 100%;
+  }
+}
+
+
+/* =================================
+   MOBILE
+================================= */
+
+@media (max-width: 480px) {
+  .messages-content {
+    padding: 16px;
+  }
+
+  .messages-title {
+    font-size: 25px;
+  }
+
+  .messages-subtitle {
+    font-size: 13px;
+  }
+
+  .messages-header {
+    margin-bottom: 24px;
+  }
+
+  .message-card {
+    padding: 16px;
+  }
+
+  .message-user {
+    gap: 11px;
+  }
+
+  .message-avatar {
+    width: 42px;
+    height: 42px;
+
+    font-size: 14px;
+  }
+
+  .message-user-info h2 {
+    font-size: 15px;
+  }
+
+  .message-user-info p {
+    font-size: 12px;
+  }
+
+  .message-text-box {
+    padding: 13px;
+  }
+
+  .message-text-box p {
+    font-size: 13px;
+    line-height: 1.65;
+  }
+
+  .message-date {
+    font-size: 11px;
+  }
+
+  .messages-count {
+    font-size: 13px;
+  }
+}

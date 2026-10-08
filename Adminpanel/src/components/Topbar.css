@@ -1,0 +1,276 @@
+* {
+  box-sizing: border-box;
+}
+
+
+/* =========================
+   TOPBAR
+========================= */
+
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 30;
+
+  height: 80px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 32px;
+
+  background: rgba(5, 25, 55, 0.95);
+
+  border-bottom: 1px solid #1e293b;
+
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+
+/* =========================
+   TITLE
+========================= */
+
+.topbar-title h2 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.topbar-title p {
+  margin: 3px 0 0;
+
+  color: #64748b;
+
+  font-size: 12px;
+}
+
+
+/* =========================
+   RIGHT SECTION
+========================= */
+
+.topbar-right {
+  display: flex;
+  align-items: center;
+
+  gap: 20px;
+}
+
+
+/* =========================
+   NOTIFICATION
+========================= */
+
+.notification-btn {
+  position: relative;
+
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+  border-radius: 50%;
+
+  background: transparent;
+
+  color: #94a3b8;
+
+  font-size: 16px;
+
+  cursor: pointer;
+
+  transition:
+    background-color 0.25s ease,
+    color 0.25s ease,
+    transform 0.2s ease;
+}
+
+.notification-btn:hover {
+  background: #1e293b;
+  color: #a8eb12;
+}
+
+.notification-btn:active {
+  transform: scale(0.94);
+}
+
+
+/* Notification Dot */
+
+.notification-dot {
+  position: absolute;
+
+  top: 8px;
+  right: 8px;
+
+  width: 8px;
+  height: 8px;
+
+  border-radius: 50%;
+
+  background: #a8eb12;
+
+  box-shadow: 0 0 8px rgba(168, 235, 18, 0.5);
+}
+
+
+/* =========================
+   USER SECTION
+========================= */
+
+.topbar-user {
+  display: flex;
+  align-items: center;
+
+  gap: 12px;
+
+  padding-left: 20px;
+
+  border-left: 1px solid #1e293b;
+}
+
+
+/* =========================
+   USER ICON
+========================= */
+
+.user-icon {
+  color: #a8eb12;
+
+  font-size: 32px;
+
+  flex-shrink: 0;
+}
+
+
+/* =========================
+   USER INFO
+========================= */
+
+.user-info {
+  min-width: 0;
+}
+
+.user-name {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  max-width: 180px;
+}
+
+.user-email {
+  margin: 3px 0 0;
+
+  color: #64748b;
+
+  font-size: 12px;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  max-width: 180px;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 768px) {
+  .topbar {
+    height: 70px;
+
+    padding: 0 20px;
+  }
+
+  .topbar-title h2 {
+    font-size: 18px;
+  }
+
+  .topbar-right {
+    gap: 14px;
+  }
+
+  .topbar-user {
+    padding-left: 14px;
+    gap: 9px;
+  }
+
+  .user-icon {
+    font-size: 29px;
+  }
+
+  .user-name,
+  .user-email {
+    max-width: 140px;
+  }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 480px) {
+  .topbar {
+    height: 64px;
+
+    padding: 0 14px;
+  }
+
+  .topbar-title h2 {
+    font-size: 16px;
+  }
+
+  .topbar-title p {
+    display: none;
+  }
+
+  .topbar-right {
+    gap: 8px;
+  }
+
+  .notification-btn {
+    width: 36px;
+    height: 36px;
+  }
+
+  .notification-dot {
+    top: 6px;
+    right: 6px;
+
+    width: 7px;
+    height: 7px;
+  }
+
+  .topbar-user {
+    padding-left: 10px;
+  }
+
+  .user-icon {
+    font-size: 27px;
+  }
+
+  .user-info {
+    display: none;
+  }
+}
