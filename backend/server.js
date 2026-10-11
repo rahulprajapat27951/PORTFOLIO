@@ -25,7 +25,7 @@ app.use(
       "http://localhost:5173",
       "http://localhost:5174",
       "https://rahul-prajapat-admin-portfolio.vercel.app",
-      ""
+      "https://rahul-prajapat-portfolio.vercel.app"
     ],
     credentials: true,
   })
