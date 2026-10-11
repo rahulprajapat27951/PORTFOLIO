@@ -24,6 +24,8 @@ app.use(
     origin: [
       "http://localhost:5173",
       "http://localhost:5174",
+      "https://rahul-prajapat-admin-portfolio.vercel.app",
+      ""
     ],
     credentials: true,
   })
