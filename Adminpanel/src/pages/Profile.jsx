@@ -72,7 +72,7 @@ function Profile() {
         localStorage.getItem("adminToken");
 
       const response = await axios.put(
-        "http://localhost:5000/api/admin/change-password",
+        "https://portfolio-0mb3.onrender.com/api/admin/change-password",
         {
           currentPassword: form.currentPassword,
           newPassword: form.newPassword,

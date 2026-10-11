@@ -67,7 +67,7 @@ function Register() {
       setLoading(true);
 
       const response = await axios.post(
-        "http://localhost:5000/api/admin/register",
+        "https://portfolio-0mb3.onrender.com/api/admin/register",
         {
           name: form.name.trim(),
           email: form.email.trim(),
