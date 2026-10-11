@@ -1,3 +1,4 @@
+
 import {
   FaHtml5,
   FaCss3Alt,
@@ -71,16 +72,16 @@ function Skills() {
   return (
     <section
       id="skills"
-      className="relative overflow-hidden border-t border-slate-800 bg-[#061f43] px-5 py-24"
+      className="relative overflow-hidden border-t border-[#243B53] bg-[#071A2F] px-5 py-24"
     >
-      {/* ================= Background Decorations ================= */}
+      {/* Background Decorations */}
 
       <div
         className="
           absolute -left-20 top-10
           h-40 w-40
           rounded-full
-          border border-[#A8EB12]/30
+          border border-[var(--theme-color)]/25
         "
       ></div>
 
@@ -89,7 +90,7 @@ function Skills() {
           absolute -right-20 bottom-0
           h-48 w-48
           rounded-full
-          border border-[#A8EB12]/30
+          border border-[var(--theme-color)]/25
         "
       ></div>
 
@@ -99,8 +100,8 @@ function Skills() {
           h-2 w-2
           animate-pulse
           rounded-full
-          bg-[#A8EB12]
-          shadow-[0_0_15px_#A8EB12]
+          bg-[var(--theme-color)]
+          shadow-[0_0_15px_var(--theme-color)]
         "
       ></div>
 
@@ -110,36 +111,35 @@ function Skills() {
           h-2 w-2
           animate-pulse
           rounded-full
-          bg-[#A8EB12]
-          shadow-[0_0_15px_#A8EB12]
+          bg-[var(--theme-color)]
+          shadow-[0_0_15px_var(--theme-color)]
         "
       ></div>
 
-      {/* ================= Main Container ================= */}
+      {/* Main Container */}
 
       <div className="relative z-10 mx-auto max-w-6xl">
 
-        {/* ================= Heading ================= */}
+        {/* Heading */}
 
         <div className="mb-14 text-center">
-
-          <p className="text-lg font-semibold text-[#A8EB12]">
+          <p className="text-lg font-semibold text-[var(--theme-color)]">
             My Expertise
           </p>
 
-          <h2 className="mt-3 text-5xl font-extrabold text-white sm:text-6xl">
+          <h2 className="mt-3 text-5xl font-extrabold text-[#F1F5F9] sm:text-6xl">
             Skills
           </h2>
 
-          {/* Green Line */}
+          {/* Gold Line */}
 
           <div
             className="
               mx-auto mt-3
               h-1 w-24
               rounded-full
-              bg-[#A8EB12]
-              shadow-[0_0_15px_#A8EB12]
+              bg-[var(--theme-color)]
+              shadow-[0_0_15px_var(--theme-color)]
             "
           ></div>
 
@@ -149,22 +149,19 @@ function Skills() {
               max-w-2xl
               text-base
               leading-7
-              text-slate-400
+              text-[#A8B7C8]
               sm:text-lg
             "
           >
             Technologies and tools I use to build modern,
             responsive and scalable web applications.
           </p>
-
         </div>
 
-        {/* ================= Skills Grid ================= */}
+        {/* Skills Grid */}
 
         <div className="grid grid-cols-2 gap-5 sm:grid-cols-3 lg:grid-cols-5">
-
           {skills.map((skill) => (
-
             <div
               key={skill.name}
               className="
@@ -178,25 +175,25 @@ function Skills() {
                 overflow-hidden
                 rounded-2xl
                 border
-                border-[#A8EB12]/60
-                bg-[#051937]
+                border-[#243B53]
+                bg-[#102A43]
                 p-6
                 text-center
                 transition-all
                 duration-500
                 hover:-translate-y-3
-                hover:border-[#A8EB12]
-                hover:shadow-[0_0_35px_rgba(168,235,18,0.25)]
+                hover:border-[var(--theme-color)]
+                hover:shadow-[0_0_35px_rgba(214,184,117,0.15)]
               "
             >
 
-              {/* ================= Card Glow ================= */}
+              {/* Card Glow */}
 
               <div
                 className="
                   absolute
                   inset-0
-                  bg-[#A8EB12]/5
+                  bg-[var(--theme-color)]/5
                   opacity-0
                   transition
                   duration-500
@@ -204,7 +201,7 @@ function Skills() {
                 "
               ></div>
 
-              {/* ================= Icon + Rings Area ================= */}
+              {/* Icon + Rings Area */}
 
               <div
                 className="
@@ -217,7 +214,7 @@ function Skills() {
                 "
               >
 
-                {/* ================= Outer Ring ================= */}
+                {/* Outer Ring */}
 
                 <div
                   className="
@@ -230,7 +227,7 @@ function Skills() {
                     -translate-y-1/2
                     rounded-full
                     border
-                    border-[#A8EB12]/40
+                    border-[var(--theme-color)]/40
                     transition-all
                     duration-700
                     group-hover:scale-125
@@ -238,7 +235,7 @@ function Skills() {
                   "
                 ></div>
 
-                {/* ================= Inner Ring ================= */}
+                {/* Inner Ring */}
 
                 <div
                   className="
@@ -252,14 +249,14 @@ function Skills() {
                     rotate-45
                     rounded-full
                     border
-                    border-[#A8EB12]/30
+                    border-[var(--theme-color)]/30
                     transition-all
                     duration-700
                     group-hover:rotate-[225deg]
                   "
                 ></div>
 
-                {/* ================= Icon Glow ================= */}
+                {/* Icon Glow */}
 
                 <div
                   className="
@@ -271,15 +268,15 @@ function Skills() {
                     -translate-x-1/2
                     -translate-y-1/2
                     rounded-full
-                    bg-[#A8EB12]/10
+                    bg-[var(--theme-color)]/10
                     blur-2xl
                     transition-all
                     duration-500
-                    group-hover:bg-[#A8EB12]/30
+                    group-hover:bg-[var(--theme-color)]/25
                   "
                 ></div>
 
-                {/* ================= Main Icon ================= */}
+                {/* Main Icon */}
 
                 <div
                   className={`
@@ -292,7 +289,7 @@ function Skills() {
                     justify-center
                     text-4xl
                     ${skill.color}
-                    drop-shadow-[0_0_15px_rgba(168,235,18,0.25)]
+                    drop-shadow-[0_0_15px_rgba(214,184,117,0.20)]
                     transition-all
                     duration-500
                     group-hover:scale-125
@@ -300,10 +297,9 @@ function Skills() {
                 >
                   {skill.icon}
                 </div>
-
               </div>
 
-              {/* ================= Skill Name ================= */}
+              {/* Skill Name */}
 
               <h3
                 className="
@@ -313,16 +309,16 @@ function Skills() {
                   text-center
                   text-lg
                   font-bold
-                  text-white
+                  text-[#F1F5F9]
                   transition-all
                   duration-300
-                  group-hover:text-[#A8EB12]
+                  group-hover:text-[var(--theme-color)]
                 "
               >
                 {skill.name}
               </h3>
 
-              {/* ================= Bottom Line ================= */}
+              {/* Bottom Line */}
 
               <div
                 className="
@@ -333,23 +329,20 @@ function Skills() {
                   w-12
                   -translate-x-1/2
                   rounded-full
-                  bg-[#A8EB12]
-                  shadow-[0_0_10px_#A8EB12]
+                  bg-[var(--theme-color)]
+                  shadow-[0_0_10px_var(--theme-color)]
                   transition-all
                   duration-500
                   group-hover:w-20
                 "
               ></div>
-
             </div>
-
           ))}
-
         </div>
-
       </div>
     </section>
   );
 }
 
 export default Skills;
+

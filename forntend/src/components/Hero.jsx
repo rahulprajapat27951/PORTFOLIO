@@ -1,31 +1,31 @@
+
 import profileImage from "../assets/hero.png";
 
 function Hero() {
   return (
     <section
       id="home"
-      className="flex min-h-[calc(100vh-73px)] items-center overflow-hidden bg-[#051937] px-5 py-20"
+      className="flex min-h-[calc(100vh-73px)] items-center overflow-hidden bg-[#071A2F] px-5 py-20"
     >
       <div className="mx-auto grid max-w-7xl items-center gap-12 lg:grid-cols-2">
 
         {/* Left Content */}
         <div>
-          <p className="mb-4 text-lg font-medium text-[#A8EB12]">
+          <p className="mb-4 text-lg font-medium text-[var(--theme-color)]">
             Hello, I'm
           </p>
 
-          <h1 className="text-5xl font-extrabold leading-tight sm:text-6xl lg:text-7xl">
-          
-            <span className="text-[#A8EB12]">
+          <h1 className="text-5xl font-extrabold leading-tight text-[#F1F5F9] sm:text-6xl lg:text-7xl">
+            <span className="text-[var(--theme-color)]">
               Rahul Prajapat
             </span>
           </h1>
 
-          <h2 className="mt-5 text-2xl font-semibold text-slate-300 sm:text-3xl">
+          <h2 className="mt-5 text-2xl font-semibold text-[#D5DFEA] sm:text-5xl">
             Full Stack Developer
           </h2>
 
-          <p className="mt-6 max-w-xl text-base leading-7 text-slate-400 sm:text-lg">
+          <p className="mt-6 max-w-xl text-base leading-7 text-[#A8B7C8] sm:text-lg">
             I build modern, responsive and scalable web applications
             using React, Node.js, Express and MongoDB.
           </p>
@@ -34,14 +34,14 @@ function Hero() {
           <div className="mt-8 flex flex-col gap-4 sm:flex-row">
             <a
               href="#projects"
-              className="rounded-lg bg-[#A8EB12] px-6 py-3 text-center font-semibold text-[#051937] transition duration-300 hover:scale-105 hover:bg-[#baff3d]"
+              className="rounded-lg bg-[var(--theme-color)] px-6 py-3 text-center font-semibold text-[#071A2F] transition duration-300 hover:scale-105 hover:opacity-80"
             >
               View Projects
             </a>
 
             <a
               href="#contact"
-              className="rounded-lg border border-slate-700 px-6 py-3 text-center font-semibold text-white transition duration-300 hover:border-[#A8EB12] hover:text-[#A8EB12]"
+              className="rounded-lg border border-[#334B63] px-6 py-3 text-center font-semibold text-[#F1F5F9] transition duration-300 hover:border-[var(--theme-color)] hover:text-[var(--theme-color)]"
             >
               Contact Me
             </a>
@@ -50,22 +50,24 @@ function Hero() {
           {/* Social Links */}
           <div className="mt-8 flex gap-5">
             <a
-              href="#"
-              className="text-slate-400 transition hover:text-[#A8EB12]"
+              href="https://github.com/"
+              className="text-[#A8B7C8] transition duration-300 hover:text-[var(--theme-color)]"
             >
               GitHub
             </a>
 
             <a
               href="#"
-              className="text-slate-400 transition hover:text-[#A8EB12]"
+              className="text-[#A8B7C8] transition duration-300 hover:text-[var(--theme-color)]"
             >
               LinkedIn
             </a>
 
             <a
               href="https://www.instagram.com/vip_raj_prajapati_741"
-              className="text-slate-400 transition hover:text-[#A8EB12]"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[#A8B7C8] transition duration-300 hover:text-[var(--theme-color)]"
             >
               Instagram
             </a>
@@ -82,7 +84,7 @@ function Hero() {
                 absolute
                 inset-0
                 rounded-full
-                bg-[#A8EB12]
+                bg-[var(--theme-color)]
                 opacity-20
                 blur-3xl
                 animate-pulse
@@ -98,17 +100,17 @@ function Hero() {
                 animate-[float_4s_ease-in-out_infinite]
                 rounded-full
                 border-4
-                border-[#A8EB12]
-                bg-[#061f43]
+                border-[var(--theme-color)]
+                bg-[#102A43]
                 p-2
-                shadow-[0_0_80px_rgba(168,235,18,0.25)]
+                shadow-[0_0_80px_rgba(214,184,117,0.20)]
                 sm:h-80
                 sm:w-80
               "
             >
               <img
                 src={profileImage}
-                alt="Your Name"
+                alt="Rahul Prajapat - Full Stack Developer"
                 className="
                   h-full
                   w-full
@@ -129,8 +131,8 @@ function Hero() {
                 w-6
                 animate-bounce
                 rounded-full
-                bg-[#A8EB12]
-                shadow-[0_0_20px_#A8EB12]
+                bg-[var(--theme-color)]
+                shadow-[0_0_20px_var(--theme-color)]
               "
             ></div>
 
@@ -144,8 +146,8 @@ function Hero() {
                 w-4
                 animate-pulse
                 rounded-full
-                bg-[#A8EB12]
-                shadow-[0_0_15px_#A8EB12]
+                bg-[var(--theme-color)]
+                shadow-[0_0_15px_var(--theme-color)]
               "
             ></div>
 
@@ -158,3 +160,4 @@ function Hero() {
 }
 
 export default Hero;
+

@@ -1,3 +1,4 @@
+
 import {
   BrowserRouter,
   Routes,
@@ -9,33 +10,20 @@ import Login from "./pages/Login";
 import Dashboard from "./pages/Dashboard";
 import Messages from "./pages/Messages";
 import Profile from "./pages/Profile";
-
+import Settings from "./pages/Settings";
 import ProtectedRoute from "./components/ProtectedRoute";
 
 function App() {
   return (
     <BrowserRouter>
-
       <Routes>
+        {/* Public Routes */}
+        <Route path="/" element={<Login />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
 
-        {/* Login */}
-        <Route
-          path="/"
-          element={<Login />}
-        />
-        <Route
-          path="/register"
-          element={<Register />}
-        />
-
-        <Route
-          path="/login"
-          element={<Login />}
-        />
-
-        {/* Protected Admin */}
+        {/* Protected Admin Routes */}
         <Route element={<ProtectedRoute />}>
-
           <Route
             path="/dashboard"
             element={<Dashboard />}
@@ -51,10 +39,13 @@ function App() {
             element={<Profile />}
           />
 
+          <Route
+            path="/settings"
+            element={<Settings />}
+          />
         </Route>
-
+        {/* ProtectedRoute closed correctly */}
       </Routes>
-
     </BrowserRouter>
   );
 }

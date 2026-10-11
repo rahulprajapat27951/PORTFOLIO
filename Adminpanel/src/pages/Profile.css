@@ -1,15 +1,13 @@
+
 /* =========================
    PROFILE PAGE
 ========================= */
 
 .profile-page {
   min-height: 100vh;
-
-  background: #051937;
-
-  color: white;
+  background: #071A2F;
+  color: #F1F5F9;
 }
-
 
 /* =========================
    MAIN
@@ -17,10 +15,8 @@
 
 .profile-main {
   min-height: 100vh;
-
   margin-left: 256px;
 }
-
 
 /* =========================
    CONTENT
@@ -29,7 +25,6 @@
 .profile-content {
   padding: 32px;
 }
-
 
 /* =========================
    HEADER
@@ -41,24 +36,17 @@
 
 .profile-title {
   margin: 0;
-
-  color: white;
-
+  color: #F1F5F9;
   font-size: 30px;
-
   font-weight: 800;
-
   line-height: 1.3;
 }
 
 .profile-subtitle {
   margin: 8px 0 0;
-
-  color: #94a3b8;
-
+  color: #A8B7C8;
   font-size: 14px;
 }
-
 
 /* =========================
    MAIN GRID
@@ -66,17 +54,11 @@
 
 .profile-grid {
   width: 100%;
-
   max-width: 1152px;
-
   display: grid;
-
-  grid-template-columns:
-    repeat(2, minmax(0, 1fr));
-
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 24px;
 }
-
 
 /* =========================
    CARD
@@ -84,25 +66,18 @@
 
 .profile-card {
   padding: 28px;
-
-  border: 1px solid #1e293b;
-
+  border: 1px solid #243B53;
   border-radius: 16px;
-
-  background: #061f43;
-
+  background: #102A43;
   transition:
     border-color 0.25s ease,
     box-shadow 0.25s ease;
 }
 
 .profile-card:hover {
-  border-color: rgba(168, 235, 18, 0.2);
-
-  box-shadow:
-    0 15px 35px rgba(0, 0, 0, 0.15);
+  border-color: rgba(214, 184, 117, 0.35);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
 }
-
 
 /* =========================
    PROFILE USER HEADER
@@ -110,14 +85,10 @@
 
 .profile-user-header {
   display: flex;
-
   align-items: center;
-
   gap: 16px;
-
   margin-bottom: 28px;
 }
-
 
 /* =========================
    USER ICON
@@ -125,12 +96,9 @@
 
 .profile-user-icon {
   flex-shrink: 0;
-
-  color: #a8eb12;
-
+  color: #D6B875;
   font-size: 64px;
 }
-
 
 /* =========================
    USER NAME
@@ -138,16 +106,11 @@
 
 .profile-user-name {
   margin: 0;
-
-  color: white;
-
+  color: #F1F5F9;
   font-size: 20px;
-
   font-weight: 700;
-
   word-break: break-word;
 }
-
 
 /* =========================
    USER ROLE
@@ -155,12 +118,9 @@
 
 .profile-user-role {
   margin: 4px 0 0;
-
-  color: #64748b;
-
+  color: #A8B7C8;
   font-size: 14px;
 }
-
 
 /* =========================
    INFO LIST
@@ -168,12 +128,9 @@
 
 .profile-info-list {
   display: flex;
-
   flex-direction: column;
-
   gap: 20px;
 }
-
 
 /* =========================
    INFO ITEM
@@ -183,25 +140,18 @@
   width: 100%;
 }
 
-
 /* =========================
    INFO LABEL
 ========================= */
 
 .profile-info-label {
   margin: 0 0 6px;
-
-  color: #64748b;
-
+  color: #A8B7C8;
   font-size: 12px;
-
   font-weight: 600;
-
   letter-spacing: 1px;
-
   text-transform: uppercase;
 }
-
 
 /* =========================
    INFO VALUE
@@ -209,45 +159,29 @@
 
 .profile-info-value {
   min-height: 46px;
-
   display: flex;
-
   align-items: center;
-
   box-sizing: border-box;
-
   padding: 10px 16px;
-
-  border: 1px solid #1e293b;
-
+  border: 1px solid #334B63;
   border-radius: 8px;
-
-  background: #051937;
-
-  color: #cbd5e1;
-
+  background: #091D33;
+  color: #F1F5F9;
   font-size: 14px;
-
   overflow-wrap: anywhere;
 }
-
 
 /* =========================
    ROLE VALUE
 ========================= */
 
 .profile-role-value {
-  border-color: rgba(168, 235, 18, 0.2);
-
-  background: rgba(168, 235, 18, 0.05);
-
-  color: #a8eb12;
-
+  border-color: rgba(214, 184, 117, 0.3);
+  background: rgba(214, 184, 117, 0.08);
+  color: #D6B875;
   font-weight: 600;
-
   text-transform: capitalize;
 }
-
 
 /* =========================
    PASSWORD HEADER
@@ -255,14 +189,10 @@
 
 .password-header {
   display: flex;
-
   align-items: center;
-
   gap: 16px;
-
   margin-bottom: 28px;
 }
-
 
 /* =========================
    PASSWORD ICON
@@ -271,23 +201,15 @@
 .password-icon {
   width: 48px;
   height: 48px;
-
   display: flex;
-
   align-items: center;
   justify-content: center;
-
   flex-shrink: 0;
-
   border-radius: 12px;
-
-  background: rgba(168, 235, 18, 0.1);
-
-  color: #a8eb12;
-
+  background: rgba(214, 184, 117, 0.12);
+  color: #D6B875;
   font-size: 20px;
 }
-
 
 /* =========================
    PASSWORD TITLE
@@ -295,14 +217,10 @@
 
 .password-title {
   margin: 0;
-
-  color: white;
-
+  color: #F1F5F9;
   font-size: 20px;
-
   font-weight: 700;
 }
-
 
 /* =========================
    PASSWORD SUBTITLE
@@ -310,12 +228,9 @@
 
 .password-subtitle {
   margin: 4px 0 0;
-
-  color: #64748b;
-
+  color: #A8B7C8;
   font-size: 14px;
 }
-
 
 /* =========================
    SUCCESS
@@ -323,26 +238,16 @@
 
 .profile-success {
   display: flex;
-
   align-items: center;
-
   gap: 8px;
-
   margin-bottom: 20px;
-
   padding: 12px;
-
-  border: 1px solid rgba(34, 197, 94, 0.2);
-
+  border: 1px solid rgba(52, 211, 153, 0.25);
   border-radius: 8px;
-
-  background: rgba(34, 197, 94, 0.1);
-
-  color: #4ade80;
-
+  background: rgba(52, 211, 153, 0.1);
+  color: #6EE7B7;
   font-size: 14px;
 }
-
 
 /* =========================
    ERROR
@@ -350,20 +255,13 @@
 
 .profile-error {
   margin-bottom: 20px;
-
   padding: 12px;
-
-  border: 1px solid rgba(239, 68, 68, 0.2);
-
+  border: 1px solid rgba(239, 68, 68, 0.25);
   border-radius: 8px;
-
   background: rgba(239, 68, 68, 0.1);
-
-  color: #f87171;
-
+  color: #FCA5A5;
   font-size: 14px;
 }
-
 
 /* =========================
    PASSWORD FORM
@@ -371,12 +269,9 @@
 
 .password-form {
   display: flex;
-
   flex-direction: column;
-
   gap: 20px;
 }
-
 
 /* =========================
    FORM GROUP
@@ -386,21 +281,16 @@
   width: 100%;
 }
 
-
 /* =========================
    LABEL
 ========================= */
 
 .password-label {
   display: block;
-
   margin-bottom: 8px;
-
-  color: #cbd5e1;
-
+  color: #F1F5F9;
   font-size: 14px;
 }
-
 
 /* =========================
    INPUT
@@ -409,54 +299,38 @@
 .password-input {
   width: 100%;
   height: 48px;
-
   box-sizing: border-box;
-
   padding: 0 16px;
-
-  border: 1px solid #334155;
-
+  border: 1px solid #334B63;
   border-radius: 8px;
-
-  background: #051937;
-
-  color: white;
-
+  background: #091D33;
+  color: #F1F5F9;
   font-size: 14px;
-
   outline: none;
-
   transition:
     border-color 0.2s ease,
     box-shadow 0.2s ease;
 }
 
-
 /* Placeholder */
 
 .password-input::placeholder {
-  color: #475569;
+  color: #8495A8;
 }
-
 
 /* Focus */
 
 .password-input:focus {
-  border-color: #a8eb12;
-
-  box-shadow:
-    0 0 0 3px rgba(168, 235, 18, 0.1);
+  border-color: #D6B875;
+  box-shadow: 0 0 0 3px rgba(214, 184, 117, 0.14);
 }
-
 
 /* Disabled */
 
 .password-input:disabled {
   opacity: 0.6;
-
   cursor: not-allowed;
 }
-
 
 /* =========================
    BUTTON
@@ -465,23 +339,14 @@
 .password-button {
   width: 100%;
   height: 48px;
-
   margin-top: 2px;
-
   border: none;
-
   border-radius: 8px;
-
-  background: #a8eb12;
-
-  color: #051937;
-
+  background: #D6B875;
+  color: #071A2F;
   font-size: 14px;
-
   font-weight: 700;
-
   cursor: pointer;
-
   transition:
     background 0.2s ease,
     box-shadow 0.2s ease,
@@ -489,10 +354,8 @@
 }
 
 .password-button:hover {
-  background: #baff3d;
-
-  box-shadow:
-    0 10px 25px rgba(168, 235, 18, 0.15);
+  background: #E8D29A;
+  box-shadow: 0 10px 25px rgba(214, 184, 117, 0.18);
 }
 
 .password-button:active {
@@ -501,17 +364,14 @@
 
 .password-button:disabled {
   opacity: 0.6;
-
   cursor: not-allowed;
 }
-
 
 /* =========================
    TABLET
 ========================= */
 
 @media (max-width: 1100px) {
-
   .profile-main {
     margin-left: 220px;
   }
@@ -523,16 +383,13 @@
   .profile-grid {
     grid-template-columns: 1fr;
   }
-
 }
-
 
 /* =========================
    MOBILE
 ========================= */
 
 @media (max-width: 768px) {
-
   .profile-main {
     margin-left: 0;
   }
@@ -556,16 +413,13 @@
   .profile-card {
     padding: 22px;
   }
-
 }
-
 
 /* =========================
    SMALL MOBILE
 ========================= */
 
 @media (max-width: 480px) {
-
   .profile-content {
     padding: 20px 14px;
   }
@@ -597,12 +451,11 @@
   .password-icon {
     width: 44px;
     height: 44px;
-
     font-size: 18px;
   }
 
   .password-title {
     font-size: 18px;
   }
-
 }
+

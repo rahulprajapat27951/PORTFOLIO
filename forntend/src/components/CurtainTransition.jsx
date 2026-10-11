@@ -86,7 +86,7 @@ function CurtainTransition({ children }) {
                                 ease: "easeInOut",
                             }}
                         >
-                            <h1 className="text-4xl md:text-6xl font-bold tracking-[0.3em] text-[#F2A6A0]">
+                            <h1 className="text-4xl md:text-6xl font-bold tracking-[0.3em] text-[var(--theme-color)]">
                                 PORTFOLIO
                             </h1>
                         </motion.div>

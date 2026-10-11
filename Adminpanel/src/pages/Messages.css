@@ -1,11 +1,12 @@
+
 /* =================================
    MAIN PAGE
 ================================= */
 
 .messages-page {
   min-height: 100vh;
-  background: #051937;
-  color: #ffffff;
+  background: #071A2F;
+  color: #F1F5F9;
 }
 
 
@@ -26,9 +27,7 @@
 .messages-content {
   width: 100%;
   max-width: 1400px;
-
   margin: 0 auto;
-
   padding: 32px;
 }
 
@@ -41,9 +40,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-
   gap: 24px;
-
   margin-bottom: 32px;
 }
 
@@ -53,9 +50,7 @@
 
 .messages-title {
   margin: 0;
-
-  color: #ffffff;
-
+  color: #F1F5F9;
   font-size: 30px;
   font-weight: 800;
   line-height: 1.2;
@@ -63,9 +58,7 @@
 
 .messages-subtitle {
   margin: 8px 0 0;
-
-  color: #94a3b8;
-
+  color: #A8B7C8;
   font-size: 14px;
   line-height: 1.5;
 }
@@ -79,17 +72,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
   gap: 8px;
-
   padding: 12px 20px;
 
-  border: 1px solid #334155;
+  border: 1px solid #334B63;
   border-radius: 12px;
 
-  background: #061f43;
-
-  color: #e2e8f0;
+  background: #091D33;
+  color: #F1F5F9;
 
   font-family: inherit;
   font-size: 14px;
@@ -105,9 +95,9 @@
 }
 
 .messages-refresh-button:hover:not(:disabled) {
-  border-color: #a8eb12;
-  color: #a8eb12;
-  background: #0a2852;
+  border-color: #D6B875;
+  color: #D6B875;
+  background: #102A43;
 }
 
 .messages-refresh-button:active:not(:disabled) {
@@ -134,29 +124,24 @@
 
 .messages-error {
   margin-bottom: 24px;
-
   padding: 16px 20px;
 
-  border: 1px solid rgba(239, 68, 68, 0.25);
+  border: 1px solid rgba(252, 165, 165, 0.25);
   border-radius: 12px;
 
-  background: rgba(239, 68, 68, 0.08);
+  background: rgba(252, 165, 165, 0.08);
 }
 
 .messages-error-title {
   margin: 0;
-
-  color: #f87171;
-
+  color: #FCA5A5;
   font-size: 14px;
   font-weight: 700;
 }
 
 .messages-error-text {
   margin: 5px 0 0;
-
-  color: #fca5a5;
-
+  color: #FCA5A5;
   font-size: 13px;
   line-height: 1.5;
 }
@@ -176,19 +161,16 @@
 
   padding: 32px;
 
-  border: 1px solid #1e293b;
+  border: 1px solid #243B53;
   border-radius: 16px;
 
-  background: #061f43;
-
+  background: #102A43;
   text-align: center;
 }
 
 .messages-state-card > p {
   margin: 16px 0 0;
-
-  color: #94a3b8;
-
+  color: #A8B7C8;
   font-size: 14px;
 }
 
@@ -201,11 +183,10 @@
   width: 42px;
   height: 42px;
 
-  border: 4px solid #334155;
-  border-top-color: #a8eb12;
+  border: 4px solid #334B63;
+  border-top-color: #D6B875;
 
   border-radius: 50%;
-
   animation: messages-spin 1s linear infinite;
 }
 
@@ -227,32 +208,25 @@
   justify-content: center;
 
   border-radius: 16px;
-
-  background: rgba(168, 235, 18, 0.1);
+  background: rgba(214, 184, 117, 0.12);
 }
 
 .messages-empty-icon {
-  color: #a8eb12;
-
+  color: #D6B875;
   font-size: 25px;
 }
 
 .messages-empty h2 {
   margin: 20px 0 0;
-
-  color: #ffffff;
-
+  color: #F1F5F9;
   font-size: 20px;
   font-weight: 700;
 }
 
 .messages-empty p {
   max-width: 420px;
-
   margin: 8px 0 0;
-
-  color: #64748b;
-
+  color: #A8B7C8;
   font-size: 14px;
   line-height: 1.6;
 }
@@ -265,7 +239,6 @@
 .messages-list {
   display: flex;
   flex-direction: column;
-
   gap: 20px;
 }
 
@@ -277,23 +250,19 @@
 .messages-count {
   display: flex;
   align-items: center;
-
   gap: 8px;
-
   margin-bottom: 2px;
 
-  color: #94a3b8;
-
+  color: #A8B7C8;
   font-size: 14px;
 }
 
 .messages-count-icon {
-  color: #a8eb12;
+  color: #D6B875;
 }
 
 .messages-count-number {
-  color: #ffffff;
-
+  color: #F1F5F9;
   font-weight: 700;
 }
 
@@ -304,15 +273,13 @@
 
 .message-card {
   width: 100%;
-
   padding: 20px;
 
-  border: 1px solid #1e293b;
+  border: 1px solid #243B53;
   border-radius: 16px;
 
-  background: #061f43;
-
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  background: #102A43;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 
   transition:
     border-color 0.25s ease,
@@ -320,8 +287,7 @@
 }
 
 .message-card:hover {
-  border-color: #334155;
-
+  border-color: #D6B875;
   transform: translateY(-2px);
 }
 
@@ -334,7 +300,6 @@
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-
   gap: 20px;
 }
 
@@ -351,14 +316,12 @@
 .message-user {
   display: flex;
   align-items: center;
-
   gap: 16px;
 }
 
 .message-avatar {
   width: 48px;
   height: 48px;
-
   flex-shrink: 0;
 
   display: flex;
@@ -366,11 +329,9 @@
   justify-content: center;
 
   border-radius: 50%;
+  background: rgba(214, 184, 117, 0.12);
 
-  background: rgba(168, 235, 18, 0.1);
-
-  color: #a8eb12;
-
+  color: #D6B875;
   font-size: 16px;
 }
 
@@ -380,9 +341,7 @@
 
 .message-user-info h2 {
   margin: 0;
-
-  color: #ffffff;
-
+  color: #F1F5F9;
   font-size: 16px;
   font-weight: 700;
 
@@ -393,9 +352,7 @@
 
 .message-user-info p {
   margin: 4px 0 0;
-
-  color: #64748b;
-
+  color: #A8B7C8;
   font-size: 14px;
 
   white-space: nowrap;
@@ -410,20 +367,17 @@
 
 .message-text-box {
   margin-top: 20px;
-
   padding: 16px;
 
-  border: 1px solid #1e293b;
+  border: 1px solid #243B53;
   border-radius: 12px;
 
-  background: #051937;
+  background: #091D33;
 }
 
 .message-text-box p {
   margin: 0;
-
-  color: #cbd5e1;
-
+  color: #D5DFEA;
   font-size: 14px;
   line-height: 1.75;
 
@@ -439,13 +393,10 @@
 .message-date {
   display: flex;
   align-items: center;
-
   gap: 8px;
-
   margin: 14px 0 0;
 
-  color: #64748b;
-
+  color: #A8B7C8;
   font-size: 12px;
 }
 
@@ -471,17 +422,15 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
   gap: 8px;
 
   padding: 12px 16px;
 
-  border: 1px solid rgba(239, 68, 68, 0.2);
+  border: 1px solid rgba(252, 165, 165, 0.25);
   border-radius: 12px;
 
-  background: rgba(239, 68, 68, 0.1);
-
-  color: #f87171;
+  background: rgba(252, 165, 165, 0.08);
+  color: #FCA5A5;
 
   font-family: inherit;
   font-size: 14px;
@@ -496,11 +445,9 @@
 }
 
 .message-delete-button:hover {
-  border-color: rgba(239, 68, 68, 0.4);
-
-  background: rgba(239, 68, 68, 0.2);
-
-  color: #ef4444;
+  border-color: rgba(252, 165, 165, 0.5);
+  background: rgba(252, 165, 165, 0.16);
+  color: #FECACA;
 }
 
 
@@ -598,7 +545,6 @@
   .message-avatar {
     width: 42px;
     height: 42px;
-
     font-size: 14px;
   }
 
@@ -627,3 +573,4 @@
     font-size: 13px;
   }
 }
+

@@ -1,11 +1,14 @@
+
 import { useEffect, useState } from "react";
 import axios from "axios";
+
 import {
   FaEnvelope,
   FaProjectDiagram,
   FaUserShield,
   FaArrowRight,
 } from "react-icons/fa";
+
 import { Link } from "react-router-dom";
 
 import Sidebar from "../components/Sidebar";
@@ -56,7 +59,7 @@ function Dashboard() {
   }, []);
 
   return (
-    <div className="dashboard-page">
+    <div className="dashboard-page iris-reveal">
 
       <Sidebar />
 
@@ -81,7 +84,6 @@ function Dashboard() {
             </p>
 
           </div>
-
 
           {/* Stats */}
           <div className="dashboard-stats">
@@ -117,7 +119,6 @@ function Dashboard() {
 
             </div>
 
-
             {/* Projects */}
             <div className="dashboard-card">
 
@@ -144,7 +145,6 @@ function Dashboard() {
               </p>
 
             </div>
-
 
             {/* Admin */}
             <div className="dashboard-card">
@@ -179,7 +179,6 @@ function Dashboard() {
 
           </div>
 
-
           {/* Quick Actions */}
           <section className="dashboard-actions">
 
@@ -189,43 +188,32 @@ function Dashboard() {
 
             <div className="dashboard-action-grid">
 
-              {/* Check Messages */}
               <Link
                 to="/messages"
                 className="dashboard-action-card"
               >
-
                 <FaEnvelope className="dashboard-action-icon" />
 
-                <h3>
-                  Check Messages
-                </h3>
+                <h3>Check Messages</h3>
 
                 <p>
                   View messages submitted through your
                   portfolio contact form.
                 </p>
-
               </Link>
 
-
-              {/* Admin Profile */}
               <Link
                 to="/profile"
                 className="dashboard-action-card"
               >
-
                 <FaUserShield className="dashboard-action-icon" />
 
-                <h3>
-                  Admin Profile
-                </h3>
+                <h3>Admin Profile</h3>
 
                 <p>
                   View your administrator account
                   information.
                 </p>
-
               </Link>
 
             </div>
